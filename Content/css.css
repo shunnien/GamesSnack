@@ -1,0 +1,71 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  background: #323232;
+}
+div {
+  background-color: blue;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(blue));
+  background: -webkit-linear-gradient(top, blue, blue);
+  background: -moz-linear-gradient(top, blue, blue);
+  background: -ms-linear-gradient(top, blue, blue);
+  background: -o-linear-gradient(top, blue, blue);
+  /** IE7 **/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='red', grandientType=1);
+  /** IE8 **/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='red', grandientType=1);
+  box-shadow: 3px 3px 8px blue;
+  border-radius: 5px;
+}
+#container {
+  background-color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+  background: -webkit-linear-gradient(top, black, black);
+  background: -moz-linear-gradient(top, black, black);
+  background: -ms-linear-gradient(top, black, black);
+  background: -o-linear-gradient(top, black, black);
+  /** IE7 **/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='red', grandientType=1);
+  /** IE8 **/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='red', grandientType=1);
+  box-shadow: 3px 3px 8px black;
+  border-radius: 5px;
+}
+input {
+  margin: 50px 0 0 50px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  -webkit-transform: 20deg;
+  -moz-transform: 20deg;
+  -ms-transform: 20deg;
+  -o-transform: 20deg;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+input:hover {
+  -webkit-transform: 360deg;
+  -moz-transform: 360deg;
+  -ms-transform: 360deg;
+  -o-transform: 360deg;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  box-shadow: 10px 10px 15px #111;
+}
+span {
+  font-size: 25px;
+  color: #ae5;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 30px;
+  position: absolute;
+  left: 10px;
+  bottom: 40px;
+}
+/*# sourceMappingURL=css.css.map */

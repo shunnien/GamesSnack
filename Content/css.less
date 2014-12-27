@@ -1,0 +1,91 @@
+﻿.transform(@string) {
+    -webkit-transform: @string;
+    -moz-transform: @string;
+    -ms-transform: @string;
+    -o-transform: @string;
+}
+
+.scale (@factor) {
+    -webkit-transform: scale(@factor);
+    -moz-transform: scale(@factor);
+    -ms-transform: scale(@factor);
+    -o-transform: scale(@factor);
+}
+
+.rotate (@deg) {
+    -webkit-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background: rgba(50,50,50,1);
+}
+
+div {
+    .gradient(blue,blue);
+    /** IE7 **/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow',endColorstr='red',grandientType=1);
+    /** IE8 **/
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow',endColorstr='red',grandientType=1);
+    box-shadow: 3px 3px 8px blue;
+    border-radius: 5px;
+}
+
+#container {
+    .gradient(black,black);
+    /** IE7 **/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow',endColorstr='red',grandientType=1);
+    /** IE8 **/
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow',endColorstr='red',grandientType=1);
+    box-shadow: 3px 3px 8px black;
+    border-radius: 5px;
+}
+
+input {
+    margin: 50px 0 0 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    .transform(20deg);
+    .transition(0.8s);
+
+    &:hover {
+        .transform(360deg);
+        .scale(1.3);
+        box-shadow: 10px 10px 15px #111;
+    }
+}
+
+span {
+    font-size: 25px;
+    color: #ae5;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+}

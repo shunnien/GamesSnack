@@ -1,4 +1,9 @@
 GamesSnack
 ==========
 
-JS 貪食蛇遊戲
+使用 Javascript 製作的貪食蛇小遊戲
+
+![](http://www.gasgds.img)
+
+
+
